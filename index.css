@@ -1,0 +1,59 @@
+body{
+
+    background: darkcyan;
+   
+}
+.boite{
+
+    display: grid;
+    border: white 2px solid;
+    border-radius: 5px;
+    grid-template-columns: 25%  25%   25%   25% ;
+    grid-template-rows: 50px repeat(5, 1fr);
+    grid-template-areas:
+     "sc sc sc sc"
+     "7 8 9 on"
+     "4 5 6 off"
+     "1 2 3 eff"
+     "0 po pl m1"
+     "div car eq eq";
+
+}
+h2{
+    grid-area:sc;
+     margin-top:1px;
+    margin-bottom:0px;
+     padding:0px;
+     text-align: right;
+     background: white;
+}
+#all{
+    grid-area: on;
+    background:greenyellow;
+
+}
+#ete{
+    grid-area:off;
+    background: red;
+    color: white;
+}
+#cln{
+    grid-area:eff;
+    background:cyan;
+
+}
+#eqal{
+    grid-area: eq;
+
+}
+#car{
+    grid-area: car;
+    background:navajowhite;
+}
+.btn{
+
+    background: grey;
+    color: white;
+    border: white 1px solid;
+    border-radius:4px;
+}
